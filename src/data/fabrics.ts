@@ -105,6 +105,48 @@ export const FABRICS: Fabric[] = [
     tags: ["Jersey", "Interlock", "Fleece"],
     img: knit,
   },
+  {
+    id: "nylon",
+    label: "Nylon Fabrics",
+    desc: "Lightweight, strong, and abrasion-resistant synthetic. Used for sportswear, bags, and technical textiles.",
+    tags: ["Taslan", "Ripstop", "Taffeta"],
+    img: nylon,
+  },
+  {
+    id: "bedsheet",
+    label: "Bedsheet Fabrics",
+    desc: "Premium percale and sateen weave bedsheet qualities. Soft hand-feel with hotel-grade durability.",
+    tags: ["Percale", "Sateen", "Hotel Grade"],
+    img: bedsheet,
+  },
+  {
+    id: "garment",
+    label: "Garment Fabrics",
+    desc: "Ready-to-stitch suiting, shirting, and lining materials for garment production and tailoring.",
+    tags: ["Suiting", "Shirting", "Lining"],
+    img: garment,
+  },
+  {
+    id: "kurti",
+    label: "Kurti Fabrics",
+    desc: "Traditional and contemporary fabrics for ethnic kurti production. Block prints, embroidery bases, and solids.",
+    tags: ["Rayon", "Cotton Blend", "Embroidery Base"],
+    img: kurti,
+  },
+  {
+    id: "rfd",
+    label: "RFD Fabrics",
+    desc: "Ready for Dyeing / Ready for Printing greige fabrics. Unfinished, prepared for custom color and print processing.",
+    tags: ["Greige", "Prepared", "Custom Dye"],
+    img: rfd,
+  },
+  {
+    id: "recycled-polyester",
+    label: "Recycled Polyester",
+    desc: "Eco-friendly rPET fabric made from recycled plastic bottles. Sustainable without compromising performance.",
+    tags: ["rPET", "Eco-Friendly", "Sustainable"],
+    img: recycledPolyester,
+  },
 ];
 
 export const MARQUEE_ITEMS = [
