@@ -80,7 +80,7 @@ function CollectionsPage() {
 
         <div className="text-center mt-20 border-t border-gold/15 pt-16">
           <p className="text-xs tracking-[0.2em] uppercase text-cream/35 mb-8">
-            Also available: Nylon · Bedsheet · Garment · Kurti · RFD · Recycled Polyester
+            Also available: Home Textile · Technical Fabrics · Custom Weaves
           </p>
           <Link to="/contact" className="btn-fill">
             Request Full Catalogue →
