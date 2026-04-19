@@ -9,6 +9,12 @@ import dyed from "@/assets/fabrics/dyed.png";
 import organic from "@/assets/fabrics/organic.png";
 import lace from "@/assets/fabrics/lace.png";
 import knit from "@/assets/fabrics/knit.png";
+import nylon from "@/assets/fabrics/nylon.png";
+import bedsheet from "@/assets/fabrics/bedsheet.png";
+import garment from "@/assets/fabrics/garment.png";
+import kurti from "@/assets/fabrics/kurti.png";
+import rfd from "@/assets/fabrics/rfd.png";
+import recycledPolyester from "@/assets/fabrics/recycled-polyester.png";
 
 export type Fabric = {
   id: string;
@@ -98,6 +104,48 @@ export const FABRICS: Fabric[] = [
     desc: "Single jersey, interlock, rib, and fleece knits. Soft, stretchy, and comfortable for garments.",
     tags: ["Jersey", "Interlock", "Fleece"],
     img: knit,
+  },
+  {
+    id: "nylon",
+    label: "Nylon Fabrics",
+    desc: "Lightweight, strong, and abrasion-resistant synthetic. Used for sportswear, bags, and technical textiles.",
+    tags: ["Taslan", "Ripstop", "Taffeta"],
+    img: nylon,
+  },
+  {
+    id: "bedsheet",
+    label: "Bedsheet Fabrics",
+    desc: "Premium percale and sateen weave bedsheet qualities. Soft hand-feel with hotel-grade durability.",
+    tags: ["Percale", "Sateen", "Hotel Grade"],
+    img: bedsheet,
+  },
+  {
+    id: "garment",
+    label: "Garment Fabrics",
+    desc: "Ready-to-stitch suiting, shirting, and lining materials for garment production and tailoring.",
+    tags: ["Suiting", "Shirting", "Lining"],
+    img: garment,
+  },
+  {
+    id: "kurti",
+    label: "Kurti Fabrics",
+    desc: "Traditional and contemporary fabrics for ethnic kurti production. Block prints, embroidery bases, and solids.",
+    tags: ["Rayon", "Cotton Blend", "Embroidery Base"],
+    img: kurti,
+  },
+  {
+    id: "rfd",
+    label: "RFD Fabrics",
+    desc: "Ready for Dyeing / Ready for Printing greige fabrics. Unfinished, prepared for custom color and print processing.",
+    tags: ["Greige", "Prepared", "Custom Dye"],
+    img: rfd,
+  },
+  {
+    id: "recycled-polyester",
+    label: "Recycled Polyester",
+    desc: "Eco-friendly rPET fabric made from recycled plastic bottles. Sustainable without compromising performance.",
+    tags: ["rPET", "Eco-Friendly", "Sustainable"],
+    img: recycledPolyester,
   },
 ];
 
