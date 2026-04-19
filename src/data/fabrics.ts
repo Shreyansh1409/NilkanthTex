@@ -9,6 +9,12 @@ import dyed from "@/assets/fabrics/dyed.png";
 import organic from "@/assets/fabrics/organic.png";
 import lace from "@/assets/fabrics/lace.png";
 import knit from "@/assets/fabrics/knit.png";
+import nylon from "@/assets/fabrics/nylon.png";
+import bedsheet from "@/assets/fabrics/bedsheet.png";
+import garment from "@/assets/fabrics/garment.png";
+import kurti from "@/assets/fabrics/kurti.png";
+import rfd from "@/assets/fabrics/rfd.png";
+import recycledPolyester from "@/assets/fabrics/recycled-polyester.png";
 
 export type Fabric = {
   id: string;
