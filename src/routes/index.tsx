@@ -106,13 +106,17 @@ function HomePage() {
             Our Heritage →
           </Link>
         </div>
-        <div className="relative fade-up d2 aspect-[4/5]">
-          <img
-            src={loomImg}
-            alt="Indian artisan working a traditional weaving loom"
+        <div className="relative fade-up d2 aspect-[4/5] overflow-hidden">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster={loomImg}
             className="w-full h-full object-cover"
-            loading="lazy"
-          />
+          >
+            <source src="/videos/heritage-loom.mp4" type="video/mp4" />
+          </video>
           <div className="absolute -bottom-12 -left-12 w-1/2 aspect-square hidden md:block shadow-elegant">
             <img
               src={brocadeDetail}
