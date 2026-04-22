@@ -107,16 +107,14 @@ function HomePage() {
           </Link>
         </div>
         <div className="relative fade-up d2 aspect-[4/5] overflow-hidden">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster={loomImg}
+          <img
+            src={loomImg}
+            alt="Master weaver crafting golden zari brocade on traditional handloom in Surat"
             className="w-full h-full object-cover"
-          >
-            <source src="/videos/heritage-loom.mp4" type="video/mp4" />
-          </video>
+            width={1024}
+            height={1280}
+            loading="lazy"
+          />
           <div className="absolute -bottom-12 -left-12 w-1/2 aspect-square hidden md:block shadow-elegant">
             <img
               src={brocadeDetail}
