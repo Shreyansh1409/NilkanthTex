@@ -109,7 +109,7 @@ function HomePage() {
         <div className="relative fade-up d2 aspect-[4/5] overflow-hidden">
           <img
             src={loomImg}
-            alt="Master weaver crafting golden zari brocade on traditional handloom in Surat"
+            alt="Modern computerized jacquard power looms weaving premium golden brocade at Nilkanth Tex facility in Surat"
             className="w-full h-full object-cover"
             width={1024}
             height={1280}
