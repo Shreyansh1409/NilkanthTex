@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { FABRICS } from "@/data/fabrics";
 import collectionsBg from "@/assets/fabrics/collections-bg.png";
+import collectionsVideo from "@/assets/fabrics/collections-hero.mp4.asset.json";
 import { InnerHero } from "./heritage";
 
 export const Route = createFileRoute("/collections")({
