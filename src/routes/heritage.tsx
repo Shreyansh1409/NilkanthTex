@@ -106,21 +106,35 @@ export function InnerHero({
   title,
   em,
   bg,
+  video,
 }: {
   crumb: string;
   title: string;
   em: string;
   bg?: string;
+  video?: string;
 }) {
   return (
     <section className="relative h-[55vh] min-h-[400px] flex items-end overflow-hidden bg-gradient-to-br from-espresso to-ink pt-20">
-      {bg && (
-        <img
-          src={bg}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+      {video ? (
+        <video
+          src={video}
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster={bg}
+          className="absolute inset-0 w-full h-full object-cover opacity-50"
         />
+      ) : (
+        bg && (
+          <img
+            src={bg}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 w-full h-full object-cover opacity-40"
+          />
+        )
       )}
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/30" />
       <div className="relative z-10 px-[6%] pb-16 max-w-7xl mx-auto w-full">
