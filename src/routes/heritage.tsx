@@ -33,6 +33,7 @@ function HeritagePage() {
         title="Our"
         em="Heritage"
         bg={heroBg}
+        video={heroVideo.url}
       />
 
       <section className="px-[6%] py-32 max-w-7xl mx-auto">
