@@ -3,6 +3,7 @@ import { FABRICS, MARQUEE_ITEMS } from "@/data/fabrics";
 import loomImg from "@/assets/fabrics/loom.png";
 import brocadeDetail from "@/assets/fabrics/brocade-detail.png";
 import loomWide from "@/assets/fabrics/loom-wide.png";
+import homeHeroVideo from "@/assets/fabrics/home-hero.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,7 +38,7 @@ function HomePage() {
           poster={loomWide}
           className="absolute inset-0 w-full h-full object-cover opacity-60"
         >
-          <source src="/videos/fabric-hero.mp4" type="video/mp4" />
+          <source src={homeHeroVideo.url} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-ink/60 via-ink/40 to-ink" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-transparent to-ink/40" />
