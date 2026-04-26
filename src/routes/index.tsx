@@ -3,6 +3,7 @@ import { FABRICS, MARQUEE_ITEMS } from "@/data/fabrics";
 import loomImg from "@/assets/fabrics/loom.png";
 import brocadeDetail from "@/assets/fabrics/brocade-detail.png";
 import loomWide from "@/assets/fabrics/loom-wide.png";
+import homeHeroVideo from "@/assets/fabrics/home-hero.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
