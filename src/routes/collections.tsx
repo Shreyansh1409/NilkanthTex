@@ -28,7 +28,7 @@ export const Route = createFileRoute("/collections")({
 function CollectionsPage() {
   return (
     <>
-      <InnerHero crumb="Collections" title="Fabric" em="Collections" bg={collectionsBg} />
+      <InnerHero crumb="Collections" title="Fabric" em="Collections" bg={collectionsBg} video={collectionsVideo.url} />
 
       <section className="px-[6%] py-24 max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16 fade-up">
