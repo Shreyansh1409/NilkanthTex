@@ -27,6 +27,56 @@ export const Route = createFileRoute("/collections")({
   component: CollectionsPage,
 });
 
+function FabricCard({ f, i }: { f: typeof FABRICS[0]; i: number }) {
+  const [loaded, setLoaded] = useState(false);
+
+  return (
+    <article
+      key={f.id}
+      className={`group relative overflow-hidden bg-ink border border-gold/10 hover:border-gold/40 transition-all duration-500 ${
+        f.feat ? "lg:col-span-2 lg:row-span-1" : ""
+      } fade-up d${i % 4}`}
+    >
+      <div className={`relative ${f.feat ? "aspect-[2/1]" : "aspect-[4/3]"} overflow-hidden`}>
+        {!loaded && (
+          <div className="absolute inset-0 z-10">
+            <Skeleton className="w-full h-full rounded-none bg-ink/60" />
+          </div>
+        )}
+        <img
+          src={f.img}
+          alt={f.label}
+          onLoad={() => setLoaded(true)}
+          className={`w-full h-full object-cover transition-all duration-700 group-hover:scale-105 ${
+            loaded ? "opacity-100" : "opacity-0"
+          }`}
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
+      </div>
+      <div className="p-6">
+        <div className="flex items-baseline justify-between mb-3">
+          <h3 className="font-serif text-2xl text-cream">{f.label}</h3>
+          <span className="text-[0.65rem] tracking-[0.25em] text-gold-light">
+            {String(i + 1).padStart(2, "0")}
+          </span>
+        </div>
+        <p className="text-sm text-cream/55 font-light leading-relaxed mb-4">{f.desc}</p>
+        <div className="flex flex-wrap gap-2">
+          {f.tags.map((t) => (
+            <span
+              key={t}
+              className="text-[0.65rem] tracking-[0.15em] uppercase px-3 py-1 border border-gold/20 text-gold-pale/80"
+            >
+              {t}
+            </span>
+          ))}
+        </div>
+      </div>
+    </article>
+  );
+}
+
 function CollectionsPage() {
   return (
     <>
@@ -43,41 +93,7 @@ function CollectionsPage() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {FABRICS.map((f, i) => (
-            <article
-              key={f.id}
-              className={`group relative overflow-hidden bg-ink border border-gold/10 hover:border-gold/40 transition-all duration-500 ${
-                f.feat ? "lg:col-span-2 lg:row-span-1" : ""
-              } fade-up d${i % 4}`}
-            >
-              <div className={`relative ${f.feat ? "aspect-[2/1]" : "aspect-[4/3]"} overflow-hidden`}>
-                <img
-                  src={f.img}
-                  alt={f.label}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
-              </div>
-              <div className="p-6">
-                <div className="flex items-baseline justify-between mb-3">
-                  <h3 className="font-serif text-2xl text-cream">{f.label}</h3>
-                  <span className="text-[0.65rem] tracking-[0.25em] text-gold-light">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                </div>
-                <p className="text-sm text-cream/55 font-light leading-relaxed mb-4">{f.desc}</p>
-                <div className="flex flex-wrap gap-2">
-                  {f.tags.map((t) => (
-                    <span
-                      key={t}
-                      className="text-[0.65rem] tracking-[0.15em] uppercase px-3 py-1 border border-gold/20 text-gold-pale/80"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </article>
+            <FabricCard key={f.id} f={f} i={i} />
           ))}
         </div>
 
