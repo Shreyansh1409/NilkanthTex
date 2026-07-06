@@ -1,7 +1,7 @@
 import cotton from "@/assets/fabrics/cotton.png";
 import polyester from "@/assets/fabrics/polyester.png";
-import jari from "@/assets/fabrics/jari.png";
-import saree from "@/assets/fabrics/saree.png";
+import sareeAsset from "@/assets/fabrics/saree-front.jpg.asset.json";
+import jariAsset from "@/assets/fabrics/jari-raw.jpg.asset.json";
 import printed from "@/assets/fabrics/printed.png";
 import fancy from "@/assets/fabrics/fancy.png";
 import satin from "@/assets/fabrics/satin.png";
@@ -15,6 +15,9 @@ import garment from "@/assets/fabrics/garment.png";
 import kurti from "@/assets/fabrics/kurti.png";
 import rfd from "@/assets/fabrics/rfd.png";
 import recycledPolyester from "@/assets/fabrics/recycled-polyester.png";
+
+const saree = sareeAsset.url;
+const jari = jariAsset.url;
 
 export type Fabric = {
   id: string;
