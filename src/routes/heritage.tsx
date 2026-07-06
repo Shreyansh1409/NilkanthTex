@@ -1,8 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import factoryImg from "@/assets/fabrics/factory-floor.png";
+import factoryAsset from "@/assets/fabrics/factory-floor.jpg.asset.json";
 import stackImg from "@/assets/fabrics/fabric-stack.png";
 import heroBg from "@/assets/fabrics/hero-bg.png";
 import heroVideo from "@/assets/fabrics/heritage-hero.mp4.asset.json";
+
+const factoryImg = factoryAsset.url;
 
 export const Route = createFileRoute("/heritage")({
   head: () => ({

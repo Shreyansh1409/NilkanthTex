@@ -70,8 +70,20 @@ function HomePage() {
         </div>
       </section>
 
+      {/* TRUST / CERTIFICATIONS STRIP */}
+      <div className="border-y border-gold/15 bg-[oklch(0.10_0.015_55)] py-5 px-[6%]">
+        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-center">
+          {["GOTS Organic", "Oeko-Tex Std 100", "REACH Compliant", "GRS Recycled", "ISO 9001:2015", "EU Export Ready"].map((c, i) => (
+            <span key={c} className="flex items-center gap-8">
+              <span className="text-[0.6rem] tracking-[0.25em] uppercase text-gold-light/80">{c}</span>
+              {i < 5 && <span className="w-1 h-1 rounded-full bg-gold/40" />}
+            </span>
+          ))}
+        </div>
+      </div>
+
       {/* MARQUEE */}
-      <div className="border-y border-gold/15 bg-ink overflow-hidden py-6">
+      <div className="border-b border-gold/15 bg-ink overflow-hidden py-6">
         <div className="marquee-track flex whitespace-nowrap">
           {[...MARQUEE_ITEMS, ...MARQUEE_ITEMS, ...MARQUEE_ITEMS].map((it, i) => (
             <span
