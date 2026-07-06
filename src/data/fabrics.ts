@@ -15,6 +15,16 @@ import garment from "@/assets/fabrics/garment.png";
 import kurti from "@/assets/fabrics/kurti.png";
 import rfd from "@/assets/fabrics/rfd.png";
 import recycledPolyester from "@/assets/fabrics/recycled-polyester.png";
+import linen from "@/assets/fabrics/linen.png";
+import denim from "@/assets/fabrics/denim.png";
+import velvet from "@/assets/fabrics/velvet.png";
+import rayon from "@/assets/fabrics/rayon.png";
+import silk from "@/assets/fabrics/silk.png";
+import tencel from "@/assets/fabrics/tencel.png";
+import hemp from "@/assets/fabrics/hemp.png";
+import bamboo from "@/assets/fabrics/bamboo.png";
+
+
 
 const saree = sareeAsset.url;
 const jari = jariAsset.url;
@@ -149,6 +159,63 @@ export const FABRICS: Fabric[] = [
     desc: "Eco-friendly rPET fabric made from recycled plastic bottles. Sustainable without compromising performance.",
     tags: ["rPET", "Eco-Friendly", "Sustainable"],
     img: recycledPolyester,
+  },
+  {
+    id: "linen",
+    label: "Linen & Viscose",
+    desc: "Breathable linen and linen-viscose blends with natural slub texture. Ideal for premium summer garments and resort wear.",
+    tags: ["Pure Linen", "Linen Blend", "Slub"],
+    img: linen,
+  },
+  {
+    id: "denim",
+    label: "Denim Fabrics",
+    desc: "Indigo-dyed twill denim in stretch, rigid, and selvedge qualities. 8–14 oz weights for jeans, jackets, and workwear.",
+    tags: ["Indigo", "Stretch", "Selvedge"],
+    img: denim,
+  },
+  {
+    id: "velvet",
+    label: "Velvet Fabrics",
+    desc: "Rich plush velvet with deep pile and luxurious sheen. Cotton, silk, and micro velvet for couture and upholstery.",
+    tags: ["Silk Velvet", "Micro Velvet", "Devoré"],
+    img: velvet,
+  },
+  {
+    id: "rayon",
+    label: "Rayon & Viscose",
+    desc: "Fluid rayon and viscose with soft drape and beautiful print takeup. Ideal for kurtis, dresses, and flowing silhouettes.",
+    tags: ["Viscose", "Modal", "Challis"],
+    img: rayon,
+  },
+  {
+    id: "silk",
+    label: "Silk Fabrics",
+    desc: "Pure mulberry silk, dupion, and habotai in lustrous natural sheen. Bridal-grade and export-quality weaves.",
+    tags: ["Mulberry", "Dupion", "Habotai"],
+    img: silk,
+    feat: true,
+  },
+  {
+    id: "tencel",
+    label: "Tencel / Lyocell",
+    desc: "Botanic-sourced Tencel lyocell with silky drape and moisture-wicking performance. Closed-loop, biodegradable.",
+    tags: ["Lyocell", "Botanic", "Biodegradable"],
+    img: tencel,
+  },
+  {
+    id: "hemp",
+    label: "Hemp Fabrics",
+    desc: "Durable hemp and hemp-cotton blends with a natural rustic texture. Low-impact crop, exceptional longevity.",
+    tags: ["Pure Hemp", "Hemp Cotton", "Low Impact"],
+    img: hemp,
+  },
+  {
+    id: "bamboo",
+    label: "Bamboo Fabrics",
+    desc: "Silky-soft bamboo viscose with natural antibacterial and moisture-wicking properties. Breathable and sustainable.",
+    tags: ["Bamboo Viscose", "Antibacterial", "Breathable"],
+    img: bamboo,
   },
 ];
 
